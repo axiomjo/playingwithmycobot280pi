@@ -23,7 +23,7 @@ from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtCore import Qt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-from pymycobot import MyCobot
+from pymycobot.mycobot import MyCobot
 from pymycobot import PI_PORT, PI_BAUD
 
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
@@ -113,7 +113,7 @@ class WorkspaceGUI(QtWidgets.QWidget):
         self.resize(1000, 700)
 
         main_layout = QtWidgets.QHBoxLayout(self)
-
+        
         # Left column: controls and readouts
         left_col = QtWidgets.QVBoxLayout()
         main_layout.addLayout(left_col, 0)
@@ -125,7 +125,8 @@ class WorkspaceGUI(QtWidgets.QWidget):
         # Connect to robot
         try:
             self.mc = MyCobot(PI_PORT, PI_BAUD)
-            print("Connected to MyCobot.")
+            print(" UWESSSS. Connected to MyCobot.")
+            
         except Exception as e:
             print("Warning: Failed to connect to MyCobot:", e)
             self.mc = None
@@ -161,7 +162,7 @@ class WorkspaceGUI(QtWidgets.QWidget):
         pose_layout.addRow("R3:", self.pose_labels['r3'])
         left_col.addWidget(pose_group)
 
-        # Control buttons: Pause / Resume / Stop / Home / Start Exploration
+        # Control buttons: Pause / Resume / Stop / Home / Start / SKIP Exploration
         btn_layout = QtWidgets.QHBoxLayout()
         self.start_btn = QtWidgets.QPushButton("Start")
         self.start_btn.clicked.connect(self.start_exploration)
@@ -177,7 +178,21 @@ class WorkspaceGUI(QtWidgets.QWidget):
         self.stop_btn.clicked.connect(self.emergency_stop)
         btn_layout.addWidget(self.stop_btn)
 
+        self.skip_btn = QtWidgets.QPushButton("Skip Point")
+        self.skip_btn.clicked.connect(self.skip_point)
+        btn_layout.addWidget(self.skip_btn)
+
+        self.color_btn = QtWidgets.QPushButton("Color Current Point Green")
+        self.color_btn.clicked.connect(self.color_current_point)
+        btn_layout.addWidget(self.color_btn)
         left_col.addLayout(btn_layout)
+
+        self.reset_btn = QtWidgets.QPushButton("Clear Stop / Reset")
+        self.reset_btn.clicked.connect(self.clear_stop)
+        btn_layout.addWidget(self.reset_btn)
+	# track stop state
+        self.stopped = False
+        
 
         # Home button (force)
         self.home_btn = QtWidgets.QPushButton("Go Home")
@@ -261,6 +276,22 @@ class WorkspaceGUI(QtWidgets.QWidget):
             self.canvas.highlight_point(self.current_index)
 
     # ---- Robot / Motion helpers ----
+    def skip_point(self):
+        print(f"[SKIP] Skipping point {self.current_index}")
+        self.current_index += 1
+        if self.current_index < len(self.points):
+            self.move_to_next_point()
+        else:
+            print("[SKIP] Exploration finished.")
+
+
+    def color_current_point(self):
+        if self.current_index < len(self.points):
+            print(f"[COLOR] Coloring point {self.current_index} green")
+            self.canvas.update_point_color(self.current_index, (0, 1, 0, 1))  # RGBA
+
+
+
     def safe_mc_send_coords(self, coords, speed):
         """Wrapper to send coords defensively (non-blocking)."""
         if not self.mc:
@@ -344,6 +375,7 @@ class WorkspaceGUI(QtWidgets.QWidget):
         self.paused = True
         self.pause_btn.setChecked(True)
         self.log("EMERGENCY STOP triggered!")
+
         # try API stop
         ok = self.attempt_stop_api()
         if not ok:
@@ -358,10 +390,25 @@ class WorkspaceGUI(QtWidgets.QWidget):
                 except Exception as e:
                     self.log(f"Fallback hold command failed: {e}")
 
+
+    def clear_stop(self):
+        if self.stopped:
+            print("[RESET] Clearing emergency stop...")
+            self.stopped = False
+
+            # Release servos (optional, to re-enable motors cleanly)
+            self.mc.release_all_servos()
+            time.sleep(0.5)
+
+            # Move robot back to home pose for safety
+            self.go_home()
+
+            print("[RESET] System is ready again.")
+    
+
     def go_home(self):
-        self.log("Going to home pose.")
-        home = [0, 0, 200, 180, 0, 0]
-        self.safe_mc_send_coords(home, self.speed_slider.value())
+        self.log("PULANG WES!.")
+        self.mc.send_angles([0,0,0,0,0,0],10)
 
     def jog_axis(self, axis_index, delta):
         """axis_index: 0=x,1=y,2=z"""
