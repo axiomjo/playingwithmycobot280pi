@@ -1,0 +1,3 @@
+[console_scripts]
+workspace_gui = mycobot_workspace_gui.gui_node:main
+

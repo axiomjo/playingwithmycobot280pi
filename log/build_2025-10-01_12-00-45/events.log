@@ -1,0 +1,80 @@
+[0.000000] (-) TimerEvent: {}
+[0.001081] (mycobot_workspace_gui) JobQueued: {'identifier': 'mycobot_workspace_gui', 'dependencies': OrderedDict()}
+[0.002075] (mycobot_workspace_gui) JobStarted: {'identifier': 'mycobot_workspace_gui'}
+[0.099165] (-) TimerEvent: {}
+[0.200151] (-) TimerEvent: {}
+[0.300885] (-) TimerEvent: {}
+[0.401599] (-) TimerEvent: {}
+[0.502310] (-) TimerEvent: {}
+[0.603052] (-) TimerEvent: {}
+[0.703775] (-) TimerEvent: {}
+[0.804437] (-) TimerEvent: {}
+[0.905072] (-) TimerEvent: {}
+[1.005744] (-) TimerEvent: {}
+[1.106447] (-) TimerEvent: {}
+[1.207196] (-) TimerEvent: {}
+[1.308018] (-) TimerEvent: {}
+[1.408989] (-) TimerEvent: {}
+[1.509949] (-) TimerEvent: {}
+[1.610687] (-) TimerEvent: {}
+[1.711441] (-) TimerEvent: {}
+[1.812101] (-) TimerEvent: {}
+[1.912755] (-) TimerEvent: {}
+[2.013451] (-) TimerEvent: {}
+[2.114099] (-) TimerEvent: {}
+[2.214730] (-) TimerEvent: {}
+[2.315446] (-) TimerEvent: {}
+[2.416096] (-) TimerEvent: {}
+[2.516770] (-) TimerEvent: {}
+[2.617431] (-) TimerEvent: {}
+[2.718143] (-) TimerEvent: {}
+[2.818786] (-) TimerEvent: {}
+[2.919473] (-) TimerEvent: {}
+[3.020171] (-) TimerEvent: {}
+[3.120884] (-) TimerEvent: {}
+[3.221776] (-) TimerEvent: {}
+[3.323147] (-) TimerEvent: {}
+[3.424266] (-) TimerEvent: {}
+[3.468363] (mycobot_workspace_gui) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/mycobot_workspace_gui', 'build', '--build-base', '/home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/build', 'install', '--prefix', '/home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui', '--record', '/home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/install.log', '--single-version-externally-managed'], 'cwd': '/home/er/TA_JosephineD_2025/investigating_robot_ws/src/mycobot_workspace_gui', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:en', 'USER': 'er', 'SSH_CLIENT': '169.254.0.2 60370 22', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/er', 'OLDPWD': '/home/er/TA_JosephineD_2025/pick_and_place_elephantrobotics_Mycobot280pi_ROS2', 'SSH_TTY': '/dev/pts/0', 'PYENV_SHELL': 'bash', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module', 'LC_MONETARY': 'en_US.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'UBUNTU_MENUPROXY': '1', 'ROS_DISTRO': 'galactic', 'LOGNAME': 'er', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '2', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/galactic/bin:/home/er/.local/bin:/home/er/.pyenv/shims:/home/er/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'letter', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': 'localhost:10.0', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/galactic', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'PWD': '/home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '169.254.0.2 60370 169.254.0.1 22', 'PYENV_ROOT': '/home/er/.pyenv', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.524489] (-) TimerEvent: {}
+[3.625398] (-) TimerEvent: {}
+[3.726067] (-) TimerEvent: {}
+[3.826792] (-) TimerEvent: {}
+[3.927515] (-) TimerEvent: {}
+[4.028218] (-) TimerEvent: {}
+[4.128879] (-) TimerEvent: {}
+[4.229515] (-) TimerEvent: {}
+[4.330167] (-) TimerEvent: {}
+[4.430928] (-) TimerEvent: {}
+[4.531627] (-) TimerEvent: {}
+[4.632247] (-) TimerEvent: {}
+[4.686717] (mycobot_workspace_gui) StdoutLine: {'line': b'running egg_info\n'}
+[4.689750] (mycobot_workspace_gui) StdoutLine: {'line': b'writing ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/PKG-INFO\n'}
+[4.690924] (mycobot_workspace_gui) StdoutLine: {'line': b'writing dependency_links to ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/dependency_links.txt\n'}
+[4.691948] (mycobot_workspace_gui) StdoutLine: {'line': b'writing entry points to ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/entry_points.txt\n'}
+[4.692735] (mycobot_workspace_gui) StdoutLine: {'line': b'writing requirements to ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/requires.txt\n'}
+[4.693397] (mycobot_workspace_gui) StdoutLine: {'line': b'writing top-level names to ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/top_level.txt\n'}
+[4.732390] (-) TimerEvent: {}
+[4.833132] (-) TimerEvent: {}
+[4.842432] (mycobot_workspace_gui) StdoutLine: {'line': b"reading manifest file '../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/SOURCES.txt'\n"}
+[4.847029] (mycobot_workspace_gui) StdoutLine: {'line': b"writing manifest file '../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/SOURCES.txt'\n"}
+[4.847765] (mycobot_workspace_gui) StdoutLine: {'line': b'running build\n'}
+[4.848423] (mycobot_workspace_gui) StdoutLine: {'line': b'running build_py\n'}
+[4.848964] (mycobot_workspace_gui) StdoutLine: {'line': b'copying mycobot_workspace_gui/gui_node.py -> /home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/build/lib/mycobot_workspace_gui\n'}
+[4.850540] (mycobot_workspace_gui) StdoutLine: {'line': b'running install\n'}
+[4.853653] (mycobot_workspace_gui) StdoutLine: {'line': b'running install_lib\n'}
+[4.858480] (mycobot_workspace_gui) StdoutLine: {'line': b'copying /home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/build/lib/mycobot_workspace_gui/gui_node.py -> /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages/mycobot_workspace_gui\n'}
+[4.861526] (mycobot_workspace_gui) StdoutLine: {'line': b'byte-compiling /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages/mycobot_workspace_gui/gui_node.py to gui_node.cpython-38.pyc\n'}
+[4.871346] (mycobot_workspace_gui) StdoutLine: {'line': b'running install_data\n'}
+[4.874203] (mycobot_workspace_gui) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.882705] (mycobot_workspace_gui) StdoutLine: {'line': b"removing '/home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages/mycobot_workspace_gui-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[4.884534] (mycobot_workspace_gui) StdoutLine: {'line': b'Copying ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info to /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages/mycobot_workspace_gui-0.0.0-py3.8.egg-info\n'}
+[4.889944] (mycobot_workspace_gui) StdoutLine: {'line': b'running install_scripts\n'}
+[4.933328] (-) TimerEvent: {}
+[4.957541] (mycobot_workspace_gui) StdoutLine: {'line': b'Installing workspace_gui script to /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/mycobot_workspace_gui\n'}
+[4.959361] (mycobot_workspace_gui) StdoutLine: {'line': b"writing list of installed files to '/home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/install.log'\n"}
+[5.033673] (-) TimerEvent: {}
+[5.064272] (mycobot_workspace_gui) CommandEnded: {'returncode': 0}
+[5.133882] (-) TimerEvent: {}
+[5.135345] (mycobot_workspace_gui) JobEnded: {'identifier': 'mycobot_workspace_gui', 'rc': 0}
+[5.139103] (-) EventReactorShutdown: {}

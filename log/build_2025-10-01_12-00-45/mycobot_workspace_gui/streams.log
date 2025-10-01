@@ -1,0 +1,24 @@
+[3.469s] Invoking command in '/home/er/TA_JosephineD_2025/investigating_robot_ws/src/mycobot_workspace_gui': PYTHONPATH=/home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mycobot_workspace_gui build --build-base /home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/build install --prefix /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui --record /home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/install.log --single-version-externally-managed
+[4.685s] running egg_info
+[4.688s] writing ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/PKG-INFO
+[4.689s] writing dependency_links to ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/dependency_links.txt
+[4.690s] writing entry points to ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/entry_points.txt
+[4.690s] writing requirements to ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/requires.txt
+[4.691s] writing top-level names to ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/top_level.txt
+[4.840s] reading manifest file '../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/SOURCES.txt'
+[4.845s] writing manifest file '../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info/SOURCES.txt'
+[4.846s] running build
+[4.846s] running build_py
+[4.847s] copying mycobot_workspace_gui/gui_node.py -> /home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/build/lib/mycobot_workspace_gui
+[4.848s] running install
+[4.851s] running install_lib
+[4.856s] copying /home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/build/lib/mycobot_workspace_gui/gui_node.py -> /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages/mycobot_workspace_gui
+[4.859s] byte-compiling /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages/mycobot_workspace_gui/gui_node.py to gui_node.cpython-38.pyc
+[4.869s] running install_data
+[4.872s] running install_egg_info
+[4.881s] removing '/home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages/mycobot_workspace_gui-0.0.0-py3.8.egg-info' (and everything under it)
+[4.882s] Copying ../../build/mycobot_workspace_gui/mycobot_workspace_gui.egg-info to /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages/mycobot_workspace_gui-0.0.0-py3.8.egg-info
+[4.888s] running install_scripts
+[4.955s] Installing workspace_gui script to /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/mycobot_workspace_gui
+[4.957s] writing list of installed files to '/home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/install.log'
+[5.063s] Invoked command in '/home/er/TA_JosephineD_2025/investigating_robot_ws/src/mycobot_workspace_gui' returned '0': PYTHONPATH=/home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/mycobot_workspace_gui build --build-base /home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/build install --prefix /home/er/TA_JosephineD_2025/investigating_robot_ws/install/mycobot_workspace_gui --record /home/er/TA_JosephineD_2025/investigating_robot_ws/build/mycobot_workspace_gui/install.log --single-version-externally-managed
